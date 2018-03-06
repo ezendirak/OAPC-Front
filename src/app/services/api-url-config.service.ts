@@ -26,6 +26,9 @@ export class ApiUrlConfigService {
   public _postNoteURL        = '/api/v1/notes/';
   public _putNoteURL         = '/api/v1/notes/';
   public _deleteNoteURL      = '/api/v1/notes/';
+
+  public _getNotesPageURL    = '/api/v1/notes_page/';
+  public _getNotesCountURL   = '/api/v1/notes_count/';
   
   //////////////////////////////////////////////////////////////////////////////////////
 

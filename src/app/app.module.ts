@@ -32,6 +32,9 @@ import { TrazaService }           from './services/traza.service';
 import { PruebaService }          from './services/prueba.service';
 
 import { DataTablesModule }       from 'angular-datatables';
+import { Notes2Component } from './components/notes2/notes2.component';
+import { ListNotesComponent } from './components/list-notes/list-notes.component';
+import { FormNotesComponent } from './components/form-notes/form-notes.component';
 
   //////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////
@@ -48,7 +51,10 @@ import { DataTablesModule }       from 'angular-datatables';
     LogoutComponent,
     NotesComponent,
     ModalNoteComponent,
-    FiltroComponent
+    FiltroComponent,
+    Notes2Component,
+    ListNotesComponent,
+    FormNotesComponent
   ],
 
   entryComponents: [ModalNoteComponent],
