@@ -16,10 +16,17 @@ export class ApiUrlConfigService {
 
   public _getNotesURL        = '/api/v1/notes/';
   public _getNoteURL         = '/api/v1/notes/';
+  
+  // public _getColorsURL       = '/api/v3/colors/';
+  public _getColorsURL       = '/api/v3/colors2/';
+  public _getDiametreURL     = '/api/v3/diametres/';
+  public _getFromFiltro      = '/api/v3/fromFiltro/';
+  public _getAllProductsURL  = '/api/v3/products/'
+  
   public _postNoteURL        = '/api/v1/notes/';
   public _putNoteURL         = '/api/v1/notes/';
   public _deleteNoteURL      = '/api/v1/notes/';
-
+  
   //////////////////////////////////////////////////////////////////////////////////////
 
   constructor() 

@@ -1,0 +1,42 @@
+<div>
+    <div class="container">
+        <select [ngModel]="colorSelected" (ngModelChange)="OnChangeC($event)">
+            <option *ngFor="let col of colors" 
+                    [value]="col"> 
+                {{ col }}
+            </option>
+        </select>
+    </div>
+
+    <div class="container">
+        <select [ngModel]="diamSelected" (ngModelChange)="OnChangeD($event)">
+            <option *ngFor="let diam of diametres" 
+                    [value]="diam"> 
+                {{ diam }}
+            </option>
+        </select>
+    </div>
+
+    <button (click)="filtrar()">Filtrar</button>
+    <button (click)="netejar()">Netejar</button>
+</div>
+<div>
+    <table datatable class="table row-border hover">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Color</th>
+            <th>Diametre</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let prod of misproducts">
+            <td>{{prod.id}}</td>
+            <td>{{prod.nom}}</td>
+            <td>{{prod.color}}</td>
+            <td>{{prod.diametre}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

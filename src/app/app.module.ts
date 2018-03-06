@@ -20,6 +20,7 @@ import { PageNotFoundComponent }  from './components/page-not-found/page-not-fou
 import { LoginComponent}          from './components/login/login.component';
 import { LogoutComponent }        from './components/logout/logout.component';
 import { NotesComponent }         from './components/notes/notes.component';
+import { FiltroComponent }        from './components/filtro/filtro.component';
 
 import { ModalNoteComponent }     from './components/modal-note/modal-note.component';
 
@@ -28,6 +29,9 @@ import { AuthorizationService }   from './services/authorization.service';
 import { UserService }            from './services/user.service';
 import { NotesService }           from './services/notes.service';
 import { TrazaService }           from './services/traza.service';
+import { PruebaService }          from './services/prueba.service';
+
+import { DataTablesModule }       from 'angular-datatables';
 
   //////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +47,8 @@ import { TrazaService }           from './services/traza.service';
     LoginComponent,
     LogoutComponent,
     NotesComponent,
-    ModalNoteComponent
+    ModalNoteComponent,
+    FiltroComponent
   ],
 
   entryComponents: [ModalNoteComponent],
@@ -53,7 +58,8 @@ import { TrazaService }           from './services/traza.service';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
+    DataTablesModule,
+    // ReactiveFormsModule,
     CollapseModule.forRoot(), 
     BsDropdownModule.forRoot(),
     ModalModule.forRoot()
@@ -65,6 +71,8 @@ import { TrazaService }           from './services/traza.service';
     AuthorizationService, 
     UserService, 
     NotesService,
+    //FilterService
+    PruebaService
   ],
 
   bootstrap: [AppComponent]
