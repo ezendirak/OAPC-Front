@@ -35,6 +35,9 @@ import { DataTablesModule }       from 'angular-datatables';
 import { Notes2Component } from './components/notes2/notes2.component';
 import { ListNotesComponent } from './components/list-notes/list-notes.component';
 import { FormNotesComponent } from './components/form-notes/form-notes.component';
+import { ProductesComponent } from './components/productes/productes.component';
+import { FiltreProductesComponent } from './components/filtre-productes/filtre-productes.component';
+import { TaulaProductesComponent } from './components/taula-productes/taula-productes.component';
 
   //////////////////////////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////////////////////////
@@ -54,7 +57,10 @@ import { FormNotesComponent } from './components/form-notes/form-notes.component
     FiltroComponent,
     Notes2Component,
     ListNotesComponent,
-    FormNotesComponent
+    FormNotesComponent,
+    ProductesComponent,
+    FiltreProductesComponent,
+    TaulaProductesComponent
   ],
 
   entryComponents: [ModalNoteComponent],

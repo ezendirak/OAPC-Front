@@ -1,4 +1,4 @@
-<div>
+<div class="container">
     <div class="container">
         <select [ngModel]="colorSelected" (ngModelChange)="OnChangeC($event)">
             <option *ngFor="let col of colors" 
@@ -16,11 +16,9 @@
             </option>
         </select>
     </div>
-
     <button (click)="filtrar()">Filtrar</button>
     <button (click)="netejar()">Netejar</button>
-</div>
-<div>
+
     <table datatable class="table row-border hover">
         <thead>
         <tr>
